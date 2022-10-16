@@ -1,4 +1,5 @@
-//10-06-22 - CS212 - tjudge - Project4
+//tjudge - Project4
+//Binary Search Assignment
 import java.util.*;
 
 interface BinarySearch {
@@ -46,24 +47,7 @@ class BinarySearchArrayList implements BinarySearch {
     public boolean contains(int value) {
         return arrList.contains(value);
     }
-
-
-/*     @Override
-       if (contains(value)) {
-            return;
-        }
-        for (int i = 0; i < arrList.toArray().length; i++) {
-            if (arrList.get(i) == 0) {
-                int[] arr = new int[0];
-                arr[i] = value;
-                break;
-            }
-        }
-        sort();
-        printElements();
-    }
- */
-    //Below is More efficient
+    
     @Override
     public void add(int value) {
         if (!contains(value)) {
@@ -228,10 +212,3 @@ public class BinarySearchArray implements BinarySearch {
         bs.binarySearchTestDriver();
     }
 }
-//
-//
-//
-//
-//
-//
-//
